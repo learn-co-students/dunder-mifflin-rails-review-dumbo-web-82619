@@ -1,0 +1,14 @@
+<h1><%= @employee.to_s %></h1>
+<hr>
+
+<%= button_to "Edit Employee", edit_employee_path(@employee), method: :get %>
+
+<img src=<%= @employee.img_url %>>
+<br>
+Alias: <%= @employee.alias %>
+<br>
+Title: <%= @employee.title %>
+<br>
+Office: <%= @employee.office %>
+<br>
+Dog: <%= @employee.dog.name %>
